@@ -1,4 +1,4 @@
-Bowling Game Kata
+bowling.Bowling Game Kata
 =================
 > Uncle Bob's [classic kata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata)
 
@@ -14,7 +14,7 @@ Bowling Game Kata
 
 ## Scoring bowling
 
-![Bowling scoreboard][bowling-score]
+![bowling.Bowling scoreboard][bowling-score]
 
 The game consists of 10 frames as shown above. In each frame the player has
 two opportunities to knock down 10 pins. The score for the frame is the total
