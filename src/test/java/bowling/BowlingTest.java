@@ -42,9 +42,20 @@ class BowlingTest {
     assertEquals(10,bowling.score());
   }
 
+  @Test
+  void testSpare() {
+    bowling.roll(5);
+    bowling.roll(5);
+    bowling.roll(4);
+    rollingPins(17, 0);
+    assertEquals(18,bowling.score());
+  }
+
   private void rollingPins(int noOfRolls, int pins) {
     for (int i = 1; i <= noOfRolls; i++) {
       bowling.roll(pins);
     }
   }
+
+
 }
