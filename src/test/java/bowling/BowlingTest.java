@@ -1,11 +1,21 @@
 package bowling;
 
-import org.junit.jupiter.api.Test;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import org.junit.jupiter.api.Test;
+
 class BowlingTest {
+
+    @Test
+
+    void testScoreForPerfectGame(){
+        Bowling bowling = new Bowling();
+        for(int i=1;i<=12;i++){
+            bowling.roll(10);
+        }
+
+        assertEquals(300,bowling.score());}
 
     @Test
     void bowlingRollZeroTest() {
@@ -25,5 +35,6 @@ class BowlingTest {
         }
         assertEquals(10,bowling.score());
     }
+
 
 }
